@@ -226,7 +226,36 @@ Always excited to tackle challenging backend problems. Let's connect if you're b
     <h2>Projects</h2>
     <ul class="proj-list">
       <li>
-        <div class="proj-title">ShopScanner for Visually Impaired – Developer</div>
+        <div class="proj-title">Weather Agent App</div>
+        <div class="proj-meta">Full-Stack AI App | FastAPI, LangChain, Gemini 2.0 Flash, OpenWeatherMap API | MCP Architecture</div>
+        <ul>
+          <li>Built a full-stack AI-powered weather assistant using a 4-layer architecture: OpenWeatherMap API, FastAPI MCP server, LangChain agent backend, and an HTML/CSS/JavaScript frontend.</li>
+          <li>Implemented a FastAPI wrapper around the OpenWeatherMap API to serve as an MCP (Model Context Protocol) server, exposing clean tool endpoints for the agent to call.</li>
+          <li>Integrated LangChain with Google Gemini 2.0 Flash as the LLM to power an agentic backend capable of tool calling and multi-step reasoning over natural language weather queries.</li>
+          <li>Built a responsive chat-style frontend in vanilla HTML, CSS, and JavaScript with message handling and error states; managed isolated Python virtual environments per service and secure API key handling via .env files.</li>
+        </ul>
+      </li>
+      <li>
+        <div class="proj-title">RAG Document Assistant (Local LLM Pipeline)</div>
+        <div class="proj-meta">AI/ML Pipeline | Python, FastAPI, LLaMA 3.1, ChromaDB, LangChain | Local Inference</div>
+        <ul>
+          <li>Enabled natural language querying over private documents by engineering an end-to-end RAG pipeline using Python, FastAPI, LLaMA 3.1, and ChromaDB, delivering source-cited answers across 76+ indexed document chunks.</li>
+          <li>Eliminated cloud API dependencies by serving LLaMA 3.1 8B locally via Ollama with 4-bit quantization, enabling fully offline inference on consumer hardware with zero cost per query.</li>
+          <li>Reduced hallucinated LLM outputs by constraining generation to semantically retrieved context using 384-dimensional vector embeddings, ensuring grounded responses tied to source documents.</li>
+          <li>Automated document ingestion by building a modular pipeline using LangChain that recursively loads, chunks, and embeds PDFs and text files into a persistent vector store with configurable chunk sizing and overlap.</li>
+        </ul>
+      </li>
+      <li>
+        <div class="proj-title">High-Performance Computing &amp; Performance Optimization</div>
+        <div class="proj-meta">Distributed Systems | Python, Dask, OpenMP, MPI | Multi-Node GPU Clusters (TACC Lonestar6)</div>
+        <ul>
+          <li>Built distributed data-processing pipelines using Python and Dask across multi-node GPU clusters, designing for scale and fault tolerance consistent with HPC and AI infrastructure requirements.</li>
+          <li>Profiled kernel execution metrics using performance analysis tooling to optimize scheduling strategies and runtime throughput, reducing bottlenecks across parallel workloads on multi-node compute environments.</li>
+          <li>Implemented compiler-aware optimization workflows with structured performance reporting, enabling systematic platform characterization and benchmarking across iterations.</li>
+        </ul>
+      </li>
+      <li>
+        <div class="proj-title">ShopScanner for Visually Impaired</div>
         <div class="proj-meta">Mobile App | MediaPipe, TensorFlow | React | Accessibility</div>
         <ul>
           <li>Architected a real-time computer vision system using MediaPipe and TensorFlow to identify grocery products via mobile camera feeds.</li>
@@ -236,7 +265,7 @@ Always excited to tackle challenging backend problems. Let's connect if you're b
         </ul>
       </li>
       <li>
-        <div class="proj-title">Scuba Diving Planner – Developer</div>
+        <div class="proj-title">Scuba Diving Planner</div>
         <div class="proj-meta">Full-Stack Web App | React, FastAPI | AI &amp; API Integration</div>
         <ul>
           <li>Reduced dive planning time by 50% building a React and FastAPI app that delivers AI-personalized dive windows across 50+ locations.</li>
@@ -268,6 +297,11 @@ Always excited to tackle challenging backend problems. Let's connect if you're b
       <li>PostgreSQL</li>
       <li>Redis</li>
       <li>OpenAI API</li>
+      <li>ChromaDB</li>
+      <li>Ollama</li>
+      <li>Dask</li>
+      <li>OpenMP</li>
+      <li>MPI</li>
     </ul>
     <br>
 
